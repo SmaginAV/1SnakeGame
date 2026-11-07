@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title><v8:item><v8:lang>ru</v8:lang><v8:content>1SnakeGame</v8:content></v8:item></Title>
+	<AutoTitle>false</AutoTitle>
+	<Width>100</Width>
+	<Height>40</Height>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"><Autofill>false</Autofill></AutoCommandBar>
+	<Events><Event name="OnOpen">ПриОткрытии</Event><Event name="OnClose">ПриЗакрытии</Event></Events>
+	<ChildItems>
+		<SpreadSheetDocumentField name="ПолеИгры" id="2">
+			<DataPath>ЭкранИгры</DataPath>
+			<DefaultItem>true</DefaultItem>
+			<TitleLocation>None</TitleLocation>
+			<Width>90</Width>
+			<HorizontalStretch>true</HorizontalStretch>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalStretch>true</VerticalStretch>
+			<VerticalScrollBar>DontUse</VerticalScrollBar>
+			<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ПолеИгрыКонтекстноеМеню" id="3">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ДействиеВверх" id="10"><CommandName>Form.Command.ПовернутьВверх</CommandName><ExtendedTooltip name="ДействиеВверхПодсказка" id="11"/></Button>
+					<Button name="ДействиеВниз" id="12"><CommandName>Form.Command.ПовернутьВниз</CommandName><ExtendedTooltip name="ДействиеВнизПодсказка" id="13"/></Button>
+					<Button name="ДействиеВлево" id="14"><CommandName>Form.Command.ПовернутьВлево</CommandName><ExtendedTooltip name="ДействиеВлевоПодсказка" id="15"/></Button>
+					<Button name="ДействиеВправо" id="16"><CommandName>Form.Command.ПовернутьВправо</CommandName><ExtendedTooltip name="ДействиеВправоПодсказка" id="17"/></Button>
+					<Button name="ДействиеМеню" id="18"><CommandName>Form.Command.ВернутьсяВМеню</CommandName><ExtendedTooltip name="ДействиеМенюПодсказка" id="19"/></Button>
+				</ChildItems>
+			</ContextMenu>
+			<ExtendedTooltip name="ПолеИгрыРасширеннаяПодсказка" id="4"/>
+			<Events><Event name="DetailProcessing">ПолеИгрыОбработкаРасшифровки</Event></Events>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ИграЗмейка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	<Attribute name="ЭкранИгры" id="2"><Type><v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type></Type></Attribute></Attributes>
+	<Commands>
+		<Command name="ПовернутьВверх" id="1"><Action>ПовернутьВверх</Action><Shortcut>Up</Shortcut></Command>
+		<Command name="ПовернутьВниз" id="2"><Action>ПовернутьВниз</Action><Shortcut>Down</Shortcut></Command>
+		<Command name="ПовернутьВлево" id="3"><Action>ПовернутьВлево</Action><Shortcut>Left</Shortcut></Command>
+		<Command name="ПовернутьВправо" id="4"><Action>ПовернутьВправо</Action><Shortcut>Right</Shortcut></Command>
+		<Command name="ВернутьсяВМеню" id="5"><Action>ВернутьсяВМеню</Action><Shortcut>Esc</Shortcut></Command>
+	</Commands>
+</Form>
