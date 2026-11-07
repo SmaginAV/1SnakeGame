@@ -15,7 +15,7 @@
 
 ## Запуск
 
-1. Скачайте [1SnakeGame.epf](1SnakeGame.epf) из файлов проекта или из раздела Releases репозитория.
+1. Скачайте [1SnakeGame.epf из последнего релиза](https://github.com/SmaginAV/1SnakeGame/releases/latest/download/1SnakeGame.epf). [Описание релиза и файлы](https://github.com/SmaginAV/1SnakeGame/releases/latest).
 2. Запустите информационную базу в тонком или толстом клиенте с управляемыми формами.
 3. Откройте файл обработки штатной командой открытия файла в 1С.
 4. Нажмите «начать игру».
