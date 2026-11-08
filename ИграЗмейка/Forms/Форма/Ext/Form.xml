@@ -27,6 +27,7 @@
 					<Button name="ДействиеВлево" id="14"><CommandName>Form.Command.ПовернутьВлево</CommandName><ExtendedTooltip name="ДействиеВлевоПодсказка" id="15"/></Button>
 					<Button name="ДействиеВправо" id="16"><CommandName>Form.Command.ПовернутьВправо</CommandName><ExtendedTooltip name="ДействиеВправоПодсказка" id="17"/></Button>
 					<Button name="ДействиеМеню" id="18"><CommandName>Form.Command.ВернутьсяВМеню</CommandName><ExtendedTooltip name="ДействиеМенюПодсказка" id="19"/></Button>
+					<Button name="ДействиеПауза" id="20"><CommandName>Form.Command.ПереключитьПаузу</CommandName><ExtendedTooltip name="ДействиеПаузаПодсказка" id="21"/></Button>
 				</ChildItems>
 			</ContextMenu>
 			<ExtendedTooltip name="ПолеИгрыРасширеннаяПодсказка" id="4"/>
@@ -47,5 +48,6 @@
 		<Command name="ПовернутьВлево" id="3"><Action>ПовернутьВлево</Action><Shortcut>Left</Shortcut></Command>
 		<Command name="ПовернутьВправо" id="4"><Action>ПовернутьВправо</Action><Shortcut>Right</Shortcut></Command>
 		<Command name="ВернутьсяВМеню" id="5"><Action>ВернутьсяВМеню</Action><Shortcut>Esc</Shortcut></Command>
+		<Command name="ПереключитьПаузу" id="6"><Action>ПереключитьПаузу</Action><Shortcut>Space</Shortcut></Command>
 	</Commands>
 </Form>
